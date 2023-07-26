@@ -18,32 +18,32 @@ getComputerChoice = function(){
 playGame = function(playerSelection, computerSelection){
     let p1 = playerSelection.toUpperCase();
     let cpu = computerSelection.toUpperCase();
-    let dec = ""
+    let decision = ""
     if(p1==cpu){
-        dec = "It's a tie!"
+        decision = "It's a tie!"
     }
     else{
         if(p1=="ROCK" && cpu=="PAPER"){
-            dec = "You lose! Paper beats rock :("
+            decision = "You lose! Paper beats rock :("
         }
         if(p1=="PAPER" && cpu=="SCISSORS"){
-            dec = "You lose! Scissors beats paper :("
+            decision = "You lose! Scissors beats paper :("
         }
         if(p1=="SCISSORS" && cpu=="ROCK"){
-            dec ="You lose! Rock beats scissors :("
+            decision ="You lose! Rock beats scissors :("
         }
 
         if(p1=="ROCK" && cpu=="SCISSORS"){
-            dec = "You win! Rock beats scissors :D"
+            decision = "You win! Rock beats scissors :D"
         }
         if(p1=="PAPER" && cpu=="ROCK"){
-            dec = "You win! Paper beats rock :D"
+            decision = "You win! Paper beats rock :D"
         }
         if(p1=="SCISSORS" && cpu=="PAPER"){
-            dec = "You win! Scissors beats paper :D"
+            decision = "You win! Scissors beats paper :D"
         }   
     }
-    return(dec);
+    return(decision);
    
 }
 
@@ -57,14 +57,13 @@ game = function(){
         console.log(oupt)
         if(String(oupt).includes("win")){
             score++;
-            console.log(score)
         }
         if(String(oupt).includes("tie")){
             rounds--
             i--
         }
         rounds++
-        console.log(String(oupt) + "The current score is " + score +": "+ (rounds - score))
+        console.log(String(oupt) + "The current score is " + score +" : "+ (rounds - score))
     }
     if(score > 2){
         console.log("You Win the whole game! Good job")
