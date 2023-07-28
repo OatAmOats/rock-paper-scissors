@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
+.header{
+    display:flex;
+    justify-content:center;
+    padding:50px;
+    
+}
+.h-text{
+    font-size:24px;
+    font-weight:bold;
+}
+
+button{
+    padding:0px;
+    border:none;
+    box-shadow: none;
+}
+
+.inputs{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.results{
+    display:flex;
+    justify-content: center;
+    padding: 50px;
+    font-size:24px; 
+}
+
+.battleground{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    font-size:30px;
+}
+.battle-text{
+    display:flex;
+    justify-content:space-between;
+    gap:500px
+}
+
+.scoreboard{
+    display:flex;
+    flex-direction:column;
+}
+h3{
+    text-align: center;
+    font-size: 24px;
+}
+
+.scrbrd{
+    display:flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    font-size:50px;
+}
+
+.reset{
+    display:flex;
+    justify-content: center;
+    margin:15px;
+}
+#reset{
+    padding: 15px;
+    background-color:darkblue;
+    color:white;
+}

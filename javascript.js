@@ -44,7 +44,6 @@ playGame = function(playerSelection, computerSelection){
         }   
     }
     return(decision);
-   
 }
 
 game = function(){
@@ -72,3 +71,24 @@ game = function(){
         console.log("You lose the match :( better luck next time!")
     }
 }
+
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissors = document.querySelector('#scissors');
+
+rock.addEventListener('click', function(e){
+    let cpu = getComputerChoice();
+    playGame("rock", cpu);
+})
+paper.addEventListener('click', function(e){
+    let cpu = getComputerChoice();
+    playGame("paper", cpu);
+})
+scissors.addEventListener('click', function(e){
+    let cpu = getComputerChoice();
+    playGame("scissors", cpu);
+})
+
+const results = document.querySelector(".results");
+const div = document.createElement('div')
+
